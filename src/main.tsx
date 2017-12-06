@@ -1,3 +1,6 @@
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+import App from './App';
 import { sayHello } from './greet';
 import { addNumbers } from './math';
 
@@ -14,3 +17,5 @@ const showNumbers = (divName: string, a: number, b: number): void => {
 
 showHello('greeting', 'TypeScript');
 showNumbers('math', 2, 5);
+
+ReactDOM.render(<App />, document.getElementById('root') as HTMLElement);

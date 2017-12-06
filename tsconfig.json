@@ -1,8 +1,12 @@
 {
-  "files": ["src/main.ts", "src/greet.ts"],
   "compilerOptions": {
     "outDir": "./build/",
+    "sourceMap": true,
     "noImplicitAny": true,
-    "target": "es2015"
-  }
+    "module": "commonjs",
+    "target": "es5",
+    "jsx": "react",
+    "allowJs": true
+  },
+  "include": ["./src/"]
 }
